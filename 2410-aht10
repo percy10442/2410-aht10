@@ -66,7 +66,7 @@ sensor:
   - platform: bh1750
     name: "studyroom illuminance"         #自行修改實體名稱，盡量不要中文，ESPhome支援度低
     address: 0x23
-    update_interval: 1s
+    update_interval: 60s
   
   - platform: aht10
     temperature:
@@ -81,7 +81,7 @@ sensor:
         - calibrate_linear:
             - 39.44 -> 62.8              #ESPhome實際讀取溫度->校驗後溫度
             - 45.73 -> 72.6              #ESPhome實際讀取溫度->校驗後溫度
-    update_interval: 1s
+    update_interval: 60s
     
 binary_sensor:
   - platform: gpio
