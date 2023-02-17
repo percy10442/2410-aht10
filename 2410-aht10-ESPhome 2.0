@@ -97,7 +97,7 @@ sensor:
       name: Move Energy          #自行修改實體名稱，盡量不要中文，ESPhome支援度低
     still_energy:             #靜止目標的能量
       name: Still Energy           #自行修改實體名稱，盡量不要中文，ESPhome支援度低
-    detection_distance:       #目標的距離（以厘米為單位）
+    detection_distance:       #目標的距離（以厘米為單位），這個最好用
       name: Detection Distance      #自行修改實體名稱，盡量不要中文，ESPhome支援度低
       
 binary_sensor:
@@ -106,7 +106,7 @@ binary_sensor:
     name: "studyroom motion"       #自行修改實體名稱，盡量不要中文，ESPhome支援度低
     device_class: motion
   - platform: ld2410
-    has_target:                    #檢測目標靜止或運動為on，自行修改實體名稱，盡量不要中文，ESPhome支援度低
+    has_target:                    #檢測目標靜止或運動為on，自行修改實體名稱，盡量不要中文，ESPhome支援度低，這個最好用
       name: studyroom presence
     has_moving_target:             #檢測目標運動為on，自行修改實體名稱，盡量不要中文，ESPhome支援度低
       name: Moving Target
